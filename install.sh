@@ -50,21 +50,20 @@ echo "Download URL: $URL"
 echo "Install directory: $INSTALL_DIR"
 echo ""
 
-# Check if we need sudo
-SUDO=""
-if [ ! -w "$INSTALL_DIR" ]; then
+# Create install directory if needed
+if ! mkdir -p "$INSTALL_DIR" 2>/dev/null; then
   if command -v sudo &> /dev/null; then
     SUDO="sudo"
     echo "Note: Using sudo to install to $INSTALL_DIR"
+    $SUDO mkdir -p "$INSTALL_DIR"
   else
-    echo "Error: Cannot write to $INSTALL_DIR and sudo is not available"
+    echo "Error: Cannot create $INSTALL_DIR and sudo is not available"
     echo "Try: INSTALL_DIR=~/.local/bin $0"
     exit 1
   fi
+else
+  SUDO=""
 fi
-
-# Create install directory if needed
-$SUDO mkdir -p "$INSTALL_DIR"
 
 # Download and extract
 echo "Downloading..."
