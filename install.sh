@@ -13,7 +13,7 @@
 
 set -e
 
-VERSION="${VERSION:-0.1.0}"
+VERSION="${VERSION:-0.2.1}"
 INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 
 # Detect OS
