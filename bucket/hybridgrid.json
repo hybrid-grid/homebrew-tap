@@ -1,16 +1,16 @@
 {
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Distributed multi-platform build system",
   "homepage": "https://github.com/hybrid-grid/hybridgrid",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/hybrid-grid/hybridgrid/releases/download/v0.1.1/hybridgrid_0.1.1_windows_amd64.zip",
-      "hash": "3f4b76734478882c11750b640844b72323de0139fa38016b648d037d4b176e8d"
+      "url": "https://github.com/hybrid-grid/hybridgrid/releases/download/v0.2.0/hybridgrid_0.2.0_windows_amd64.zip",
+      "hash": "94ef125b1f916af1907374ca99c3e8971dee4f7bc474e6ba92e0d088fe6439a5"
     },
     "arm64": {
-      "url": "https://github.com/hybrid-grid/hybridgrid/releases/download/v0.1.1/hybridgrid_0.1.1_windows_arm64.zip",
-      "hash": "794921cf707b0fca6301a6008d3088faef64da65215be3fc80deb77eee3c1ef8"
+      "url": "https://github.com/hybrid-grid/hybridgrid/releases/download/v0.2.0/hybridgrid_0.2.0_windows_arm64.zip",
+      "hash": "e5fe318760efebdafff46ddbf909871b5e49f103617872864421d1d1efb3d916"
     }
   },
   "bin": [
